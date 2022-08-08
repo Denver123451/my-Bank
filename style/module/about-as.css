@@ -1,0 +1,48 @@
+.about-us {
+    padding: 40px 0;
+}
+
+.about-us__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    color: #55C2FF;
+    margin-bottom: 34px;
+}
+
+.about-us__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+ }
+
+.about-us__advantage {
+    width: 400px;
+
+ }
+
+.about-us__exchange-rates {
+    flex-grow: 1;
+    width: 100%;
+ }
+
+@media (max-width: 1024px){
+    .about-us__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+}
+
+@media (max-width: 860px){
+    .about-us__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .about-us__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}

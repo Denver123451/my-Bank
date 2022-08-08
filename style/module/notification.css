@@ -1,0 +1,31 @@
+.notification {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    width: 400px;
+}
+
+.notification__item{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #E4F2FF;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    color: #000000;
+    align-items: center;
+}
+
+
+.notification__close {
+    right: 14px;
+    top: 14px;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    color: #55C2FF;
+}

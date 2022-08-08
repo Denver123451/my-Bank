@@ -1,0 +1,118 @@
+.advantage__list-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.advantage__button {
+    width: 180px;
+    height: 47px;
+    background-color: #68B7FF;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 1px solid #68B7FF;
+    transition-property: border-color, background-color;
+    transition-duration: 0.36s;
+    transition-timing-function: ease-in-out;
+}
+.advantage__button:hover {
+    border-color: #1C88EB;
+}
+
+.advantage__button_active,
+.advantage__button:active {
+    background-color: #1C88EB;
+    border-color: #1C88EB;
+}
+
+.advantage__item-content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: none;
+    align-items: center;
+    gap: 40px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.advantage__item-content_active {
+    display: flex;
+}
+
+.advantage__item-content:before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantage__item-content_convenience:before {
+    background-image: url("../../img/convenience.svg");
+}
+
+.advantage__item-content_speed:before {
+    background-image: url("../../img/speed.svg");
+}
+
+.advantage__item-content_quality:before {
+    background-image: url("../../img/quality.svg");
+}
+
+.advantage__item-content_security:before {
+    background-image: url("../../img/security.svg");
+}
+
+@media (max-width: 860px) {
+    .advantage__list-btn {
+        margin-bottom: 35px;
+    }
+    .advantage__button {
+        width: 160px;
+        height: 39px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .advantage__item-content {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 720px) {
+    .advantage__list-btn {
+        flex-wrap: wrap;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage__list-btn {
+        margin-bottom: 30px;
+    }
+
+    .advantage__button {
+        width: 140px;
+    }
+    .advantage__item-content {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .advantage__item-content:before {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Bank</title>
+
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ibm-plex-sans-v14-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/index.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <img src="img/BankID-logo-2_1.png" alt="" class="header__logo">
+
+            <button class="header__nav-btn" aria-label="Открыть меню">
+                <svg width="36" height="36" viewbox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 27H31.5V24H4.5V27ZM4.5 19.5H31.5V16.5H4.5V19.5ZM4.5 9V12H31.5V9H4.5Z" />
+                </svg>
+            </button>
+
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list navigation__list_header">
+                    <li class="navigation__item">
+                        <a href="#about-us" class="navigation__link">Состояние счета</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">My Bank</h1>
+                <p class="hero__subtitle">Ваш самый надежный Банк</p>
+                <button class="hero__btn">Создать транзакцию</button>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <h2 class="about-us__title">Ваш счет</h2>
+
+                <div class="about-us__container">
+
+                    <div class="about-us__advantage advantage" id="about-us--id">
+                        
+                        <div class="lds-circle loading" ><div></div></div>
+                    
+                        
+
+                    </ul>
+                    </div>
+
+                    <div class="about-us__exchange-rates exchange-rates">
+                    <h3 class="exchange-rates__title">Последние транзакции</h3>
+
+                    <ul class="exchange-rates__list" id="list__trans">
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__container">
+                <h2 class="modal__title">
+                    Новая транзакция
+                </h2>
+
+                <form class="modal__form">
+                   <fieldset class="modal__person">
+                     <label class="modal__label">Описание
+                         <input type="text" class="modal__input" name="description">
+                     </label>
+
+                     <label class="modal__select">Тип
+                        <select name="type" class="modal__input">
+                            <option value="Receiving" selected>Receiving</option>
+                            <option value="Sending">Sending</option>
+                        </select>
+                     </label>
+
+                     <label class="modal__select">Сумма
+                         <input type="text" class="modal__input" name="amount">
+                     </label>
+                   </fieldset>
+
+                    <button class="modal__order" type="submit">Начать транзакцию!</button>
+
+
+                </form>
+                <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2C8.2 2 2 8.2 2 16C2 23.8 8.2 30 16 30C23.8 30 30 23.8 30 16C30 8.2 23.8 2 16 2ZM21.4 23L16 17.6L10.6 23L9 21.4L14.4 16L9 10.6L10.6 9L16 14.4L21.4 9L23 10.6L17.6 16L23 21.4L21.4 23Z"/>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <img src="img/BankID-logo-2_1.png" alt="Logo Crypto" class="footer__logo">
+
+            <div class="footer__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item navigation__item_footer">
+                        <a href="#about-us" class="navigation__link">Состояние счета</a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+
+            <p class="footer__copyright">© Yura, 2022</p>
+
+            <a href="#" class="footer__design">@Yura</a>
+        </div>
+    </footer>
+
+    <ul class="notification">       
+        
+    </ul>
+
+</body>
+</html>
